@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Técnica - Aires Acondicionados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🔧 Guía Técnica - Aires Acondicionados</h1>
+        <nav>
+            <button class="nav-btn active" data-section="buenas-practicas">Buenas Prácticas</button>
+            <button class="nav-btn" data-section="problemas">Problemas Comunes</button>
+            <button class="nav-btn" data-section="presiones">Presiones</button>
+            <button class="nav-btn" data-section="amperaje">Amperaje</button>
+            <button class="nav-btn" data-section="calculadoras">Calculadoras</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Buenas Prácticas -->
+        <section id="buenas-practicas" class="content-section active">
+            <h2>📋 Buenas Prácticas de Instalación</h2>
+            
+            <div class="card">
+                <h3>🏠 Ubicación de la Unidad Interior</h3>
+                <ul>
+                    <li>Altura mínima: 2.5m del suelo</li>
+                    <li>Distancia mínima de paredes: 15cm laterales, 10cm superior</li>
+                    <li>Evitar luz solar directa</li>
+                    <li>No instalar sobre fuentes de calor</li>
+                    <li>Asegurar drenaje adecuado</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>🌡️ Unidad Exterior</h3>
+                <ul>
+                    <li>Superficie firme y nivelada</li>
+                    <li>Ventilación libre: 60cm frontal, 30cm laterales</li>
+                    <li>Proteger de lluvia directa</li>
+                    <li>Evitar áreas con mucho polvo</li>
+                    <li>Acceso para mantenimiento</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Instalación Eléctrica</h3>
+                <ul>
+                    <li>Usar cable calibre adecuado según amperaje</li>
+                    <li>Instalar breaker dedicado</li>
+                    <li>Conexión a tierra obligatoria</li>
+                    <li>Verificar voltaje antes de conectar</li>
+                    <li>Usar contactores para equipos >3 toneladas</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Tuberías de Refrigerante</h3>
+                <ul>
+                    <li>Usar tubo de cobre tipo ACR</li>
+                    <li>Aislar completamente las líneas</li>
+                    <li>Pendiente 1% hacia exterior</li>
+                    <li>Evitar curvas pronunciadas</li>
+                    <li>Realizar prueba de presión antes de conectar</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Problemas Comunes -->
+        <section id="problemas" class="content-section">
+            <h2>🔍 Diagnóstico de Problemas Comunes</h2>
+            
+            <div class="problem-search">
+                <input type="text" id="problem-search" placeholder="Buscar problema...">
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card" data-keywords="no enfria caliente">
+                    <h3>❄️ No Enfría Suficiente</h3>
+                    <div class="causes">
+                        <h4>Posibles Causas:</h4>
+                        <ul>
+                            <li>Filtro sucio</li>
+                            <li>Falta de refrigerante</li>
+                            <li>Condensador sucio</li>
+                            <li>Compresor defectuoso</li>
+                        </ul>
+                    </div>
+                    <div class="solutions">
+                        <h4>Soluciones:</h4>
+                        <ul>
+                            <li>Limpiar/cambiar filtro</li>
+                            <li>Verificar presiones</li>
+                            <li>Limpiar serpentín exterior</li>
+                            <li>Revisar amperaje del compresor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-keywords="ruido vibra">
+                    <h3>🔊 Ruidos Anormales</h3>
+                    <div class="causes">
+                        <h4>Posibles Causas:</h4>
+                        <ul>
+                            <li>Ventilador desbalanceado</li>
+                            <li>Soportes flojos</li>
+                            <li>Compresor defectuoso</li>
+                            <li>Objetos extraños</li>
+                        </ul>
+                    </div>
+                    <div class="solutions">
+                        <h4>Soluciones:</h4>
+                        <ul>
+                            <li>Balancear ventilador</li>
+                            <li>Ajustar tornillería</li>
+                            <li>Revisar compresor</li>
+                            <li>Limpiar unidades</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-keywords="gotea agua fuga">
+                    <h3>💧 Goteo de Agua</h3>
+                    <div class="causes">
+                        <h4>Posibles Causas:</h4>
+                        <ul>
+                            <li>Drenaje obstruido</li>
+                            <li>Bomba de condensado defectuosa</li>
+                            <li>Serpentín congelado</li>
+                            <li>Instalación incorrecta</li>
+                        </ul>
+                    </div>
+                    <div class="solutions">
+                        <h4>Soluciones:</h4>
+                        <ul>
+                            <li>Destapar drenaje</li>
+                            <li>Revisar bomba</li>
+                            <li>Verificar flujo de aire</li>
+                            <li>Corregir pendiente</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="problem-card" data-keywords="no enciende electrico">
+                    <h3>⚡ No Enciende</h3>
+                    <div class="causes">
+                        <h4>Posibles Causas:</h4>
+                        <ul>
+                            <li>Falta de energía</li>
+                            <li>Fusible quemado</li>
+                            <li>Termostato defectuoso</li>
+                            <li>Capacitor dañado</li>
+                        </ul>
+                    </div>
+                    <div class="solutions">
+                        <h4>Soluciones:</h4>
+                        <ul>
+                            <li>Verificar voltaje</li>
+                            <li>Revisar fusibles</li>
+                            <li>Probar termostato</li>
+                            <li>Medir capacitores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presiones -->
+        <section id="presiones" class="content-section">
+            <h2>📊 Tabla de Presiones de Refrigerantes</h2>
+            
+            <div class="refrigerant-selector">
+                <label for="refrigerant-type">Tipo de Refrigerante:</label>
+                <select id="refrigerant-type">
+                    <option value="R22">R-22</option>
+                    <option value="R410A">R-410A</option>
+                    <option value="R134A">R-134A</option>
+                    <option value="R404A">R-404A</option>
+                </select>
+            </div>
+
+            <div class="pressure-tables">
+                <div class="pressure-table" id="pressure-table">
+                    <!-- Tabla generada dinámicamente -->
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📝 Notas Importantes</h3>
+                <ul>
+                    <li>Presiones medidas a nivel del mar</li>
+                    <li>Ajustar según altitud (+/- 1 PSI por cada 300m)</li>
+                    <li>Temperatura ambiente estándar: 25°C</li>
+                    <li>Verificar siempre con manifold calibrado</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Amperaje -->
+        <section id="amperaje" class="content-section">
+            <h2>⚡ Consumo Amperométrico</h2>
+            
+            <div class="amperage-calculator">
+                <h3>Calculadora de Amperaje</h3>
+                <div class="calc-inputs">
+                    <label>
+                        Toneladas:
+                        <input type="number" id="tonnage" min="0.5" max="10" step="0.5" value="1">
+                    </label>
+                    <label>
+                        Voltaje:
+                        <select id="voltage">
+                            <option value="110">110V</option>
+                            <option value="220">220V</option>
+                            <option value="440">440V</option>
+                        </select>
+                    </label>
+                    <button onclick="calculateAmperage()">Calcular</button>
+                </div>
+                <div id="amperage-result" class="result"></div>
+            </div>
+
+            <div class="amperage-table">
+                <h3>Tabla de Referencia - Consumo Típico</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Toneladas</th>
+                            <th>110V (A)</th>
+                            <th>220V (A)</th>
+                            <th>440V (A)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1 Ton</td><td>15-20</td><td>7.5-10</td><td>3.8-5</td></tr>
+                        <tr><td>1.5 Ton</td><td>20-25</td><td>10-12.5</td><td>5-6.3</td></tr>
+                        <tr><td>2 Ton</td><td>25-30</td><td>12.5-15</td><td>6.3-7.5</td></tr>
+                        <tr><td>2.5 Ton</td><td>30-35</td><td>15-17.5</td><td>7.5-8.8</td></tr>
+                        <tr><td>3 Ton</td><td>35-40</td><td>17.5-20</td><td>8.8-10</td></tr>
+                        <tr><td>4 Ton</td><td>45-50</td><td>22.5-25</td><td>11.3-12.5</td></tr>
+                        <tr><td>5 Ton</td><td>55-60</td><td>27.5-30</td><td>13.8-15</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>⚠️ Consideraciones</h3>
+                <ul>
+                    <li>Valores incluyen compresor + ventiladores</li>
+                    <li>Amperaje de arranque puede ser 3-5 veces mayor</li>
+                    <li>Verificar placa del fabricante</li>
+                    <li>Considerar factor de servicio del motor</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Calculadoras -->
+        <section id="calculadoras" class="content-section">
+            <h2>🧮 Calculadoras Útiles</h2>
+            
+            <div class="calculators-grid">
+                <div class="calculator-card">
+                    <h3>❄️ Carga Térmica</h3>
+                    <div class="calc-inputs">
+                        <label>Área (m²): <input type="number" id="area" min="1"></label>
+                        <label>Altura (m): <input type="number" id="height" value="2.5" step="0.1"></label>
+                        <label>Personas: <input type="number" id="people" min="1" value="2"></label>
+                        <label>
+                            Orientación:
+                            <select id="orientation">
+                                <option value="1">Norte</option>
+                                <option value="1.2">Sur</option>
+                                <option value="1.3">Este</option>
+                                <option value="1.4">Oeste</option>
+                            </select>
+                        </label>
+                        <button onclick="calculateThermalLoad()">Calcular BTU</button>
+                    </div>
+                    <div id="thermal-result" class="result"></div>
+                </div>
+
+                <div class="calculator-card">
+                    <h3>🔧 Calibre de Cable</h3>
+                    <div class="calc-inputs">
+                        <label>Amperaje (A): <input type="number" id="current" min="1"></label>
+                        <label>Distancia (m): <input type="number" id="distance" min="1"></label>
+                        <label>
+                            Voltaje:
+                            <select id="wire-voltage">
+                                <option value="110">110V</option>
+                                <option value="220">220V</option>
+                            </select>
+                        </label>
+                        <button onclick="calculateWireGauge()">Calcular Calibre</button>
+                    </div>
+                    <div id="wire-result" class="result"></div>
+                </div>
+
+                <div class="calculator-card">
+                    <h3>💰 Consumo Eléctrico</h3>
+                    <div class="calc-inputs">
+                        <label>Potencia (W): <input type="number" id="power" min="100"></label>
+                        <label>Horas/día: <input type="number" id="hours" min="1" max="24" value="8"></label>
+                        <label>Costo kWh ($): <input type="number" id="rate" step="0.01" value="0.15"></label>
+                        <button onclick="calculateElectricalCost()">Calcular Costo</button>
+                    </div>
+                    <div id="cost-result" class="result"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
